@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const {PORT}=require('./config/serverConfig');
 
 // const{sendBasicEmail}=require('./services/email-service');
-const cron = require('node-cron');
+// const cron = require('node-cron');
 
 
 const setupAndStartServer=()=>{
@@ -20,9 +20,9 @@ const setupAndStartServer=()=>{
         //     "You have are doing great Rahul , just keep on increasing your focus"
         // )
 
-        cron.schedule('*/2 * * * * *',()=>{
-        console.log('running a task every two seconds');
-        })
+        // cron.schedule('*/2 * * * * *',()=>{
+        // console.log('running a task every two seconds');
+        // })
     })
 }
 
